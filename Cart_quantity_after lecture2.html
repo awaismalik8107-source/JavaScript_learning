@@ -13,7 +13,7 @@
 
     <button onclick=
     "
-      console.log('Cart Quantity:\t'+Cart_quantity);
+      console.log('Cart Quantity:\t ${cartQuantity}');
       
       
       ">
@@ -23,14 +23,14 @@
     </button>
 
     <button onclick="
-    Cart_quantity +=1;
+    cartQuantity +=1;
     console.log('Add to cart :\t'+1);
     ">
         Add to Cart
       </button>
     <button
     onclick="
-    Cart_quantity+=2;
+    cartQuantity+=2;
     console.log('Add to cart :\t'+2);
     "
     
@@ -39,7 +39,7 @@
 
     <button
     onclick="
-    Cart_quantity+=3;
+    cartQuantity+=3;
     console.log('Add to cart :\t'+3);
     "
     >+3</button>
@@ -47,16 +47,20 @@
 
     <button
     onclick="
-    Cart_quantity=0;
+    cartQuantity=0;
     console.log('Reset to\t'+0);
     "
     
     >Reset Cart</button>
 
     <script>
-      let Cart_quantity=0;
+      let cartQuantity=0;
+      //This nameing sense is called camel case 
+      //Fisrt character is small and rest are capital
+      //var cart of variableQuantity=0; is also method of declearation
 
-
+      //Tell us type of variable
+      console.log(typeof cartQuantity);
     </script>
 
   </body>
