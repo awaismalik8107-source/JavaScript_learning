@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+
+      Rock Paper Sccissor
+
+    </title>
+
+  </head>
+  <body>
+    <p>
+      Rock Paper Sccissor
+    </p>
+    <button onclick="
+    
+    pick_c_initailizer();
+
+    //Actual Checking;
+  
+    
+    if(paper===1)
+    {
+      Result='false';
+      alert('You Picked Rock. Computer Picked Paper . YOU LOSE');
+    }
+
+    else if(sccissor ===1){
+    
+      Result='true';
+      alert('You Picked Rock. Computer Picked Sccissor . YOU WIN');
+    }
+    else
+    {
+      Result='tie';
+      alert('You Picked Rock. Computer Picked Rock . YOU TIE');
+    }
+
+    
+
+
+
+
+    
+    console.log(Result);
+
+    ">
+      Rock
+    </button>
+
+
+    <button onclick="
+    
+    pick_c_initailizer()
+    
+    if(paper===1)
+    {
+      Result='false';
+      alert('You Picked Paper. Computer Picked Paper . YOU TIE');
+    }
+
+    else if(sccissor ===1){
+    
+      Result='true';
+      alert('You Picked Paper. Computer Picked Sccissor . YOU LOSE');
+    }
+    else
+    {
+      Result='tie';
+      alert('You Picked Paper. Computer Picked Rock . YOU WIN');
+    }
+    
+    console.log(Result);
+
+    ">
+      Paper
+    </button>
+
+
+    <button onclick="
+    
+    
+    
+      pick_c_initailizer()
+
+
+
+    //Actual Checking;
+    if(paper===1)
+    {
+      Result='false';
+      alert('You Picked Sccissor. Computer Picked Paper. YOU WIN');
+    }
+
+    else if(sccissor ===1){
+    
+      Result='true';
+      alert('You Picked Sccissor. Computer Picked Sccissor . YOU TIE');
+    }
+    else
+    {
+      Result='tie';
+      alert('You Picked Sccissor. Computer Picked Rock . YOU LOSE');
+    }
+
+    console.log(Result);
+    
+    ">
+      Sccissor
+    </button> 
+        
+ 
+    <script>
+
+
+      let Random;
+      let rock=0;
+      let paper=0;
+      let sccissor=0;
+
+
+
+      let Result;
+
+      function pick_c_initailizer()
+      {
+
+      Random= Math.random();
+      if(Random>=0&&Random<=0.33333)
+    {
+      rock=1;
+      paper=0;
+      sccissor=0;
+    }
+      if(Random>0.33333&&Random<=0.66666)
+    {
+      paper=1;
+      rock=0;
+      sccissor=0;
+    }
+    if(Random>0.66666&&Random<=1)
+    {
+      rock=0;
+      paper=0;
+      sccissor=1;
+    }
+
+      }
+      
+     
+    </script>
+
+  </body>
+
+
+</html>
