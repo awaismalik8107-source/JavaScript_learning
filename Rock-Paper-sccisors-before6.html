@@ -38,25 +38,32 @@
     }
 
     //Actual Checking;
+  
+    
+    if(paper===1)
+    {
+      Result='false';
+      alert('You Picked Rock. Computer Picked Paper . YOU LOSE');
+    }
+
+    else if(sccissor ===1){
+    
+      Result='true';
+      alert('You Picked Rock. Computer Picked Sccissor . YOU WIN');
+    }
+    else
+    {
+      Result='tie';
+      alert('You Picked Rock. Computer Picked Rock . YOU TIE');
+    }
+
+    
+
+
+
+
     
     console.log(Result);
-
-
-
-
-
-
-    
-    if(rock==1)
-    {
-      Result=false;
-    }
-    else{
-      Result=true;
-    }
-    
-
-
 
     ">
       Rock
@@ -87,18 +94,24 @@
       sccissor=1;
     }
 
-    //Actual Checking;
+    if(paper===1)
+    {
+      Result='false';
+      alert('You Picked Paper. Computer Picked Paper . YOU TIE');
+    }
+
+    else if(sccissor ===1){
+    
+      Result='true';
+      alert('You Picked Paper. Computer Picked Sccissor . YOU LOSE');
+    }
+    else
+    {
+      Result='tie';
+      alert('You Picked Paper. Computer Picked Rock . YOU WIN');
+    }
     
     console.log(Result);
-    
-    
-    if(paper==1)
-    {
-      Result=false;
-    }
-    else{
-      Result=true;
-    }
 
     ">
       Paper
@@ -128,19 +141,28 @@
       sccissor=1;
     }
 
+
+
     //Actual Checking;
+    if(paper===1)
+    {
+      Result='false';
+      alert('You Picked Sccissor. Computer Picked Paper. YOU WIN');
+    }
+
+    else if(sccissor ===1){
     
+      Result='true';
+      alert('You Picked Sccissor. Computer Picked Sccissor . YOU TIE');
+    }
+    else
+    {
+      Result='tie';
+      alert('You Picked Sccissor. Computer Picked Rock . YOU LOSE');
+    }
+
     console.log(Result);
     
-    
-    
-    if(sccissor==1)
-    {
-      Result=false;
-    }
-    else{
-      Result=true;
-    }
     ">
       Sccissor
     </button> 
