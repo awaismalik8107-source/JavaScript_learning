@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+
+      CSS Project Amazon
+
+    </title>
+    <style>
+      .Cost
+      {
+        font-size: 15px;
+        /* padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px; */
+        padding: 10px;
+      }
+      .Cbutton
+      {
+        background-color: green;
+        border-color: greenyellow;
+        font-size: 15px;
+        padding: 10px 15px;
+        color: rgb(216, 233, 219);
+        cursor: pointer;
+      }
+
+      body{
+        font-size: 20px;
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+    <p>
+      Amazon Shipping Calculator
+      <br><br>
+      Order under $40= +$10 Shipping.
+      <br><br>
+      Order over $40= Free Shipping.
+    </p>
+    </button>
+    
+    <input placeholder="Cost of Order" class="Cost">
+    <button onclick="
+    Calculate();
+    " class="Cbutton">
+      Calculate
+    </button>
+      <p class="resultant">
+
+
+
+    </p>
+    <script>
+      let final_price;
+      function Calculate()
+      {
+        const initail_sum = Number(document.querySelector('.Cost').value);
+        if(initail_sum)
+      {
+        if(initail_sum<40&&initail_sum!=0)
+      {
+        final_price=initail_sum+10;
+      }
+      else
+      {
+        final_price=initail_sum;
+      }
+        document.querySelector('.resultant').innerHTML=`<br><br>The final price is: &nbsp; $${final_price}`;
+        console.log(final_price);
+    }
+      }
+
+
+    </script>
+
+  </body>
+
+
+</html>
+<!-----------END------------------->

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+
+      CSS Project Subscribe
+
+    </title>
+    <style>
+      .subscribe
+      {
+        border: none;
+        background-color: black;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 60px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .is_Subscribed
+      {
+        background-color: azure;
+        color: black;
+      }
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+    <p style="font-size: 24px;">
+      Youtube Subscribe Button
+    </p>
+    <button class="subscribe" onclick="
+      
+      action();
+
+
+
+      ">
+      Subscribe
+    </button>
+
+    
+    <script>
+      const animate=document.querySelector('.subscribe')
+      function action()
+      {
+        console.log(document.querySelector('.subscribe'));
+
+
+        if(document.querySelector('.subscribe').innerHTML==='Subscribe')
+      {
+        document.querySelector('.subscribe').innerHTML = 'Subscribed';
+        animate.classList.add('is_Subscribed');
+
+      }
+      else
+      {
+      document.querySelector('.subscribe').innerHTML = 'Subscribe';
+      animate.classList.remove('is_Subscribed');
+      }
+      }
+
+
+      
+    </script>
+
+  </body>
+
+
+</html>
+<!-----------END------------------->
