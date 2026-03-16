@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+
+      DOM Project Subscribe
+
+    </title>
+
+  </head>
+  <body>
+    <button class="subscribe" onclick="
+      
+      action();
+
+      ">
+      Subscribe
+    </button>
+    <script>
+      function action()
+      {
+        console.log(document.querySelector('.subscribe'));
+
+        if(document.querySelector('.subscribe').innerHTML==='Subscribe')
+      {
+        document.querySelector('.subscribe').innerHTML = 'Subscribed';
+      }
+      else
+      document.querySelector('.subscribe').innerHTML = 'Subscribe';
+      }
+
+      
+    </script>
+
+  </body>
+
+
+</html>
+<!-----------END------------------->
