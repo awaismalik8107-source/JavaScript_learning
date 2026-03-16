@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+
+      DOM Project Amazon
+
+    </title>
+
+  </head>
+  <body>
+    <p>
+      Amazon Shipping Calculator
+      <br><br>
+      Order under $40= +$10 Shipping.
+      <br><br>
+      Order over $40= Free Shipping.
+    </p>
+    </button>
+    
+    <input placeholder="Cost of Order" class="Cost">
+    <button onclick="
+    Calculate();
+    ">
+      Calculate
+    </button>
+      <p class="resultant">
+
+
+
+    </p>
+    <script>
+      let final_price;
+      function Calculate()
+      {
+        const initail_sum = Number(document.querySelector('.Cost').value);
+        if(initail_sum<40)
+      {
+        final_price=initail_sum+10;
+      }
+      else
+      {
+        final_price=initail_sum;
+      }
+        document.querySelector('.resultant').innerHTML=`<br><br>The final price is: &nbsp; ${final_price}`;
+        console.log(final_price);
+      }
+
+
+    </script>
+
+  </body>
+
+
+</html>
+<!-----------END------------------->
