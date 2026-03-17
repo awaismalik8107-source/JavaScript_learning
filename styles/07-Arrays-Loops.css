@@ -1,0 +1,42 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.todo_grid_style,
+.Id
+{
+  display:grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.Id{
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+.name_input,
+.date_input {
+  font-size: 16px !important;
+  padding: 6px !important;
+  appearance: none;
+}
+.Add-button{
+  background-color: green;
+  color: white ;
+  border:none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.deleteButton
+{
+  background-color:darkred;
+  color: white ;
+  border:none;
+  cursor: pointer;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
