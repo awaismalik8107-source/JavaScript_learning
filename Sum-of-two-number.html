@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>
+
+      Sum of two numbers
+
+    </title>
+    <style>
+      body{
+        background-color: rgb(0, 0, 0);
+      }
+      .Number_input1{
+        background-color: rgb(45, 45,45);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        border: 4px solid rgb(0, 246, 15);
+        height: 92px;
+        width: 343px;
+        padding-left: 40px;
+        margin-left: 70px;
+        margin-bottom: 100px;
+        margin-right: 70px;
+
+      }
+
+      .Number_input{
+        background-color: rgb(45, 45,45);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        border: 4px solid rgb(0, 246, 15);
+        height: 92px;
+        width: 343px;
+        padding-left: 40px;
+        margin-left: 70px;
+        margin-bottom: 100px;
+        margin-right: 70px;
+
+      }
+      input[type="number"]::-webkit-outer-spin-button,
+      input[type="number"]::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+        margin: 0;
+        
+      }
+      .Image{
+        vertical-align: middle;
+          height: 50px;
+          
+        }
+
+        input[type="number"] {
+        -moz-appearance: textfield; /* Firefox */
+        }
+      .Button
+      {
+        background-color: rgb(0, 246, 15);
+        height: 50px;
+        width: 200px;
+        border: 3px solid rgb(16, 204, 63) ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 104, 17);
+        margin-left: 470px;
+        margin-bottom: 100px;
+      }
+      .Text1
+      {
+      font-size: 20px;
+      color: rgb(0, 194, 32);   /* or white depending on background */
+
+      margin-left: 530px;
+      
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <input class="Number_input1" placeholder="Enter Number 1" type="number"
+    onclick="
+    document.querySelector()
+    ">
+    <img src="plus.png" class="Image">
+    <input class="Number_input" placeholder="Enter Number 2" type="number">
+    <br>
+    <button class="Button"
+    onclick="
+    sum_of();
+    
+    "
+    
+    >Sum</button>
+    <p class="Text1">Result</p>
+    <script>
+      function sum_of()
+      {
+        let sum=Number(document.querySelector('.Number_input1').value)+Number(document.querySelector('.Number_input').value);
+
+        document.querySelector('.Text1').innerHTML=`Result<br> ${sum}`;
+      }
+      
+      
+      
+    </script>
+
+  </body>
+
+
+</html>
+<!-----------END------------------->
