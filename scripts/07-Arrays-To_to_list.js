@@ -19,13 +19,10 @@ for(let i=0;i<to_do_list.length;i++)
   <div>${name}</div>
   <div>${dueDate}</div>
     <button
-    onclick=
-    "
-    to_do_list.splice(${i},1);
-    render();
-    "
+   
     class="
     deleteButton
+    js-delete
     "
     >
     Delete
@@ -35,7 +32,23 @@ for(let i=0;i<to_do_list.length;i++)
 }
 
 document.querySelector('.printer').innerHTML=todolistHTML;//we did this because html does support <p> nesting
+
+document.querySelectorAll('.js-delete').forEach((value,index)=>
+{
+  value.addEventListener('click',()=>{
+
+    to_do_list.splice(index,1);
+    render();
+  })
+});
 }
+
+document.querySelector('.add-todo-ad').addEventListener('click',()=>{
+  addTodo();
+});
+
+
+
 function addTodo()
 {
   const input_element=document.querySelector('.js_input');
